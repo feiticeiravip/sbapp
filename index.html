@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>SUPER BANCAS - Plataforma Completa de Jogos Online</title>
+  <meta name="description" content="SUPER BANCAS - Plataforma moderna para apostas e jogos online com diversas cotações, suporte rápido e acesso imediato." />
+  <meta name="keywords" content="super bancas, superbancas.app, jogos online, apostas online, cotação, banca online, apostas esportivas" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="SUPER BANCAS" />
+  <meta name="theme-color" content="#0d0d0d" />
+  <link rel="canonical" href="https://superbancas.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SUPER BANCAS" />
+  <meta property="og:description" content="Entre agora na SUPER BANCAS e confira as melhores cotações e oportunidades." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://superbancas.app/" />
+  <meta property="og:image" content="https://superbancas.app/superbancas.webp" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SUPER BANCAS" />
+  <meta name="twitter:description" content="Acesse agora a SUPER BANCAS." />
+  <meta name="twitter:image" content="https://superbancas.app/superbancas.webp" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="logosb.webp" type="image/webp">
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#060606;
+      color:#fff;
+      overflow-x:hidden;
+    }
+
+    .bg{
+      position:fixed;
+      width:100%;
+      height:100%;
+      background:
+      radial-gradient(circle at top,#3a2b00 0%,#060606 45%);
+      z-index:-1;
+    }
+
+    header{
+      width:100%;
+      padding:20px 6%;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      border-bottom:1px solid rgba(255,215,0,0.15);
+      backdrop-filter: blur(10px);
+    }
+
+    .logo-area{
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+
+    .logo-area img{
+      width:65px;
+      height:65px;
+      object-fit:contain;
+    }
+
+    .logo-text{
+      font-size:32px;
+      font-weight:800;
+      color:#FFD700;
+      letter-spacing:1px;
+      text-shadow:0 0 15px rgba(255,215,0,0.4);
+    }
+
+    .hero{
+      width:100%;
+      min-height:90vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:60px 6%;
+    }
+
+    .container{
+      max-width:1250px;
+      width:100%;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:60px;
+      align-items:center;
+    }
+
+    .left h1{
+      font-size:58px;
+      line-height:1.1;
+      margin-bottom:25px;
+      font-weight:800;
+    }
+
+    .gold{
+      color:#FFD700;
+      text-shadow:0 0 20px rgba(255,215,0,0.4);
+    }
+
+    .left p{
+      color:#cfcfcf;
+      font-size:19px;
+      line-height:1.8;
+      margin-bottom:35px;
+    }
+
+    .buttons{
+      display:flex;
+      flex-wrap:wrap;
+      gap:18px;
+    }
+
+    .btn{
+      text-decoration:none;
+      padding:18px 34px;
+      border-radius:14px;
+      font-size:18px;
+      font-weight:700;
+      transition:0.3s;
+      display:inline-flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .btn-primary{
+      background:linear-gradient(135deg,#FFD700,#ffb700);
+      color:#000;
+      box-shadow:0 0 25px rgba(255,215,0,0.35);
+    }
+
+    .btn-primary:hover{
+      transform:translateY(-4px) scale(1.03);
+    }
+
+    .btn-whatsapp{
+      background:#1faa59;
+      color:#fff;
+      box-shadow:0 0 20px rgba(31,170,89,0.35);
+    }
+
+    .btn-whatsapp:hover{
+      transform:translateY(-4px) scale(1.03);
+    }
+
+    .right{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .main-image{
+      width:100%;
+      max-width:620px;
+      border-radius:24px;
+      overflow:hidden;
+      border:2px solid rgba(255,215,0,0.3);
+      box-shadow:
+      0 0 40px rgba(255,215,0,0.12),
+      0 0 80px rgba(255,215,0,0.08);
+    }
+
+    .main-image img{
+      width:100%;
+      display:block;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px 20px;
+      color:#9e9e9e;
+      border-top:1px solid rgba(255,215,0,0.1);
+    }
+
+    @media(max-width:980px){
+
+      .container{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+
+      .buttons{
+        justify-content:center;
+      }
+
+      .left h1{
+        font-size:42px;
+      }
+
+      .logo-text{
+        font-size:24px;
+      }
+
+      .logo-area img{
+        width:52px;
+        height:52px;
+      }
+
+    }
+
+    @media(max-width:600px){
+
+      .left h1{
+        font-size:34px;
+      }
+
+      .left p{
+        font-size:16px;
+      }
+
+      .btn{
+        width:100%;
+        justify-content:center;
+      }
+
+    }
+  </style>
+
+  <!-- SEO Estruturado -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"SUPER BANCAS",
+    "url":"https://superbancas.app",
+    "logo":"https://superbancas.app/logosb.webp"
+  }
+  </script>
+
+</head>
+<body>
+
+<div class="bg"></div>
+
+<header>
+  <div class="logo-area">
+    <img src="logosb.webp" alt="Logo SUPER BANCAS">
+    <div class="logo-text">SUPER BANCAS</div>
+  </div>
+</header>
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="left">
+
+      <h1>
+        ENTRE AGORA NA
+        <span class="gold">SUPER BANCAS</span>
+      </h1>
+
+      <p>
+        Plataforma moderna com diversas opções de jogos, cotações atualizadas,
+        acesso rápido e suporte disponível para ajudar você.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          href="https://app.superbancas.club/pr/1hROl7pY"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          🎯 ENTRAR NO SITE
+        </a>
+
+        <a
+          href="https://wa.me/5583993370071"
+          target="_blank"
+          class="btn btn-whatsapp"
+        >
+          💬 CHAME O SUPORTE
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="right">
+      <div class="main-image">
+        <img
+          src="superbancas.webp"
+          alt="SUPER BANCAS plataforma de jogos online"
+        >
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 SUPER BANCAS - Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
